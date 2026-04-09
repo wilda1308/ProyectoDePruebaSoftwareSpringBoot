@@ -43,50 +43,36 @@ El proyecto sigue una arquitectura en capas:
 
 ---
 
-## ❕Tipos de Pruebas Implementadas
-
-### 🔹 Pruebas Unitarias (UsuarioServiceImpl())
-
-Validan la lógica de negocio de manera aislada evaluando entradas y salidas del programa y lo que envia o recibe es correcto apra el negocio.
-En estos se incluyen clases de:
-
-* `ProductoServiceImplTest()`
-* Uso de Mockito para simular el repositorio
-* Validación de:
-
-  * Creación de productos
-  * Validaciones de negocio
-  * Manejo de errores
-
----
-
-### 🔹 Pruebas de Controlador (WebMvcTest)
-
-Validan el comportamiento de la API sin levantar todo el contexto y emulando lo que es los request y response al enviarlos al controller.
-
-* `ProductoControllerTest()`
-* Uso de MockMvc
-* Validación de:
-
-  * Códigos HTTP (200, 201, 400, 404)
-  * Validaciones de entrada
-  * Manejo de excepciones
-
----
-
-### 🔹 Pruebas de Integración
-
-Validan el flujo completo de la aplicación ya realizando request validos y validando el estado de los response al devolverlos.
-
-* `ProductoIntegrationTest()`
-* Uso de base de datos en memoria (H2)
-* Validación de:
-
-  * Persistencia real
-  * Endpoints REST completos
-  * Flujo CRUD
-
----
+>[!IMPORTANT]
+>## Tipos de Pruebas Implementadas
+>### 🔹 Pruebas Unitarias (UsuarioServiceImpl())
+>Validan la lógica de negocio de manera aislada evaluando entradas y salidas del programa y lo que envia o recibe es correcto apra el negocio.
+>En estos se incluyen clases de:
+>* `ProductoServiceImplTest()`
+>* Uso de Mockito para simular el repositorio
+>* Validación de:
+  >* Creación de productos
+  >* Validaciones de negocio
+  >* Manejo de errores
+>---
+>### 🔹 Pruebas de Controlador (WebMvcTest)
+>Validan el comportamiento de la API sin levantar todo el contexto y emulando lo que es los request y response al enviarlos al controller.
+>* `ProductoControllerTest()`
+>* Uso de MockMvc
+>* Validación de:
+  >* Códigos HTTP (200, 201, 400, 404)
+  >* Validaciones de entrada
+  >* Manejo de excepciones
+>---
+>### 🔹 Pruebas de Integración
+>Validan el flujo completo de la aplicación ya realizando request validos y validando el estado de los response al devolverlos.
+>* `ProductoIntegrationTest()`
+>* Uso de base de datos en memoria (H2)
+>* Validación de:
+  >* Persistencia real
+  >* Endpoints REST completos
+  >* Flujo CRUD
+>---
 
 ## 📊 Cobertura de Código
 
@@ -169,13 +155,11 @@ Formato de respuesta:
 **Wilson David Monroy Ramírez**
 
 ---
-
-## 🗒️ Notas Finales
-
-Este proyecto tiene fines académicos y está enfocado en demostrar:
-
-* Buenas prácticas en desarrollo backend
-* Implementación de pruebas automatizadas
-* Implementacion de herramientas totalmente utiles como Srping Boot
+>[!NOTE]
+>## 🗒️ Notas Finales
+>Este proyecto tiene fines académicos y está enfocado en demostrar:
+>* Buenas prácticas en desarrollo backend
+>* Implementación de pruebas automatizadas
+>* Implementacion de herramientas totalmente utiles como Srping Boot
 
 ---
